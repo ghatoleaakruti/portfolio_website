@@ -36,6 +36,16 @@ export default function Home() {
   // Projects data
   const projects = [
     {
+      title: "Tesla Stock Return Prediction & Quant Trading Strategy",
+      description:
+        "End-to-end quantitative trading strategy for Tesla using Python with regression and ensemble models, achieving superior Sharpe ratio and lowest drawdown compared to benchmarks.",
+      detailedDescription:
+        "A comprehensive quantitative trading strategy developed for Tesla (TSLA) stock as part of Data Science Engineering Methods & Tools course at Northeastern University. This project demonstrates advanced financial modeling, feature engineering, and algorithmic trading implementation. Key achievements and methodologies include:\n\n• Built end-to-end quantitative trading strategy using Python with multiple regression models (OLS, LASSO, Ridge) and ensemble methods (Random Forest, Bagging, Gradient Boosting) to forecast daily returns from 2020–2024\n\n• Engineered over 50 sophisticated financial features including:\n  - Technical indicators (RSI, ATR, OBV)\n  - Macroeconomic factors (FRED, ADS, yield curves)\n  - Candlestick pattern labels\n  - Sentiment scores using NewsAPI and TextBlob for market sentiment analysis\n\n• Applied Principal Component Analysis (PCA) and statistical feature selection (p-value ≤ 0.05) to reduce multicollinearity and optimize model interpretability and performance\n\n• Implemented sophisticated trading execution simulation with:\n  - Confidence-weighted position sizing\n  - ATR-based risk management protocols\n  - Stop-loss logic for downside protection\n  - VIX-adjusted leverage rules for volatility adaptation\n\n• Achieved superior performance metrics, outperforming baseline models and established benchmarks (Buy-and-Hold, Buffett strategy) with the highest Sharpe ratio and lowest maximum drawdown\n\n• Delivered comprehensive analytical insights through return attribution analysis, feature importance evaluation, and strategy benchmarking to assess both predictive accuracy and trading performance",
+      technologies: ["Python", "Machine Learning", "Financial Modeling", "PCA", "NewsAPI", "TextBlob"],
+      icon: <LineChart className="h-12 w-12 text-taupe-600" />,
+      githubLink: "https://github.com/ghatoleaakruti",
+    },
+    {
       title: "Healthcare Management System",
       description:
         "SQL stored procedures for patient records, staff schedules, and administrative tasks with column-level encryption and Power BI dashboards.",
