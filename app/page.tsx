@@ -40,10 +40,10 @@ export default function Home() {
       description:
         "End-to-end quantitative trading strategy for Tesla using Python with regression and ensemble models, achieving superior Sharpe ratio and lowest drawdown compared to benchmarks.",
       detailedDescription:
-        "A comprehensive quantitative trading strategy developed for Tesla (TSLA) stock as part of Data Science Engineering Methods & Tools course at Northeastern University. This project demonstrates advanced financial modeling, feature engineering, and algorithmic trading implementation. Key achievements and methodologies include:\n\n• Built end-to-end quantitative trading strategy using Python with multiple regression models (OLS, LASSO, Ridge) and ensemble methods (Random Forest, Bagging, Gradient Boosting) to forecast daily returns from 2020–2024\n\n• Engineered over 50 sophisticated financial features including:\n  - Technical indicators (RSI, ATR, OBV)\n  - Macroeconomic factors (FRED, ADS, yield curves)\n  - Candlestick pattern labels\n  - Sentiment scores using NewsAPI and TextBlob for market sentiment analysis\n\n• Applied Principal Component Analysis (PCA) and statistical feature selection (p-value ≤ 0.05) to reduce multicollinearity and optimize model interpretability and performance\n\n• Implemented sophisticated trading execution simulation with:\n  - Confidence-weighted position sizing\n  - ATR-based risk management protocols\n  - Stop-loss logic for downside protection\n  - VIX-adjusted leverage rules for volatility adaptation\n\n• Achieved superior performance metrics, outperforming baseline models and established benchmarks (Buy-and-Hold, Buffett strategy) with the highest Sharpe ratio and lowest maximum drawdown\n\n• Delivered comprehensive analytical insights through return attribution analysis, feature importance evaluation, and strategy benchmarking to assess both predictive accuracy and trading performance",
+        "A comprehensive quantitative trading strategy developed for Tesla (TSLA) stock as part of Data Science Engineering Methods & Tools course at Northeastern University. Key achievements include:\n\n• Built end-to-end quantitative trading strategy using Python with multiple regression models (OLS, LASSO, Ridge) and ensemble methods (Random Forest, Bagging, Gradient Boosting) to forecast daily returns from 2020–2024\n\n• Engineered over 50 sophisticated financial features including technical indicators (RSI, ATR, OBV), macroeconomic factors (FRED, ADS, yield curves), candlestick pattern labels, and sentiment scores using NewsAPI and TextBlob\n\n• Applied Principal Component Analysis (PCA) and statistical feature selection (p-value ≤ 0.05) to reduce multicollinearity and optimize model interpretability\n\n• Implemented sophisticated trading execution simulation with confidence-weighted position sizing, ATR-based risk management, stop-loss logic, and VIX-adjusted leverage rules\n\n• Achieved superior performance metrics, outperforming baseline models and established benchmarks (Buy-and-Hold, Buffett strategy) with the highest Sharpe ratio and lowest maximum drawdown",
       technologies: ["Python", "Machine Learning", "Financial Modeling", "PCA", "NewsAPI", "TextBlob"],
       icon: <LineChart className="h-12 w-12 text-taupe-600" />,
-      githubLink: "https://github.com/ghatoleaakruti",
+      githubLink: "https://github.com/ghatoleaakruti/tesla_trading_strategy",
     },
     {
       title: "Healthcare Management System",
@@ -53,7 +53,7 @@ export default function Home() {
         "A comprehensive healthcare management system designed to streamline patient record management, staff scheduling, and administrative tasks. The system utilizes SQL stored procedures with column-level encryption to ensure data security and compliance with healthcare regulations. Key features include:\n\n- Patient record management with secure access controls\n- Staff scheduling and resource allocation\n- Administrative task automation\n- Power BI dashboards for data visualization and analytics\n- Encrypted data storage for sensitive patient information\n- Role-based access control for different user types",
       technologies: ["SQL", "Power BI", "Python", "GUI"],
       icon: <Database className="h-12 w-12 text-taupe-600" />,
-      githubLink: "https://github.com/ghatoleaakruti",
+      githubLink: "https://github.com/ghatoleaakruti/DMDD_Project",
     },
     {
       title: "Mean Reversion Strategy on S&P 500 Stocks",
@@ -63,7 +63,7 @@ export default function Home() {
         "A sophisticated quantitative trading strategy implemented on S&P 500 stocks using mean reversion principles. The strategy leverages Bollinger Bands and Z-score thresholds to identify trading opportunities when prices deviate significantly from their historical means. Key achievements include:\n\n- Achieved a Sharpe Ratio of 1.8, indicating strong risk-adjusted returns\n- Implemented backtesting framework to validate strategy performance\n- Developed risk management protocols to limit drawdowns\n- Created automated execution system for trade entries and exits\n- Incorporated market regime detection to adapt to changing market conditions\n- Utilized statistical analysis to optimize parameter selection",
       technologies: ["Python", "Finance", "DeFi", "Smart Contracts"],
       icon: <LineChart className="h-12 w-12 text-taupe-600" />,
-      githubLink: "https://github.com/ghatoleaakruti",
+      githubLink: "https://github.com/ghatoleaakruti/Mean_Reversion_Strategy",
     },
     {
       title: "Crypto Portfolio Optimizer (DeFiQuant)",
@@ -92,7 +92,7 @@ export default function Home() {
         "A critical healthcare application designed to facilitate and streamline cross-border organ donation processes. The system provides comprehensive tracking of organ availability, matching, and approval workflows across different healthcare systems and countries. Key features include:\n\n- Java-based approval tracking dashboard for real-time status monitoring\n- Automated email notification system using Java Mail API for timely alerts\n- Multi-level approval workflow with role-based permissions\n- Integration with hospital systems for patient data synchronization\n- Secure data transmission protocols for sensitive medical information\n- Reporting and analytics for process optimization\n- Mobile-responsive interface for on-the-go access by medical professionals",
       technologies: ["Java", "Swing", "SQL", "API"],
       icon: <Heart className="h-12 w-12 text-taupe-600" />,
-      githubLink: "https://github.com/ghatoleaakruti",
+      githubLink: "https://github.com/codexvala-da/Organ-Donation-Management-and-Collaboration-Platform",
     },
   ]
 
@@ -678,7 +678,6 @@ export default function Home() {
                   <ul className="text-brown-600 list-disc pl-5 text-sm">
                     <li>Approached colleges in Maharashtra to promote foundation goals and gain new participants.</li>
                     <li>Managed selection, onboarding, and team allocation of new joiners.</li>
-                    <li>Conducted events related to art and craft, LGBTQ awareness, and book donation.</li>
                   </ul>
                 </div>
                 <div>
