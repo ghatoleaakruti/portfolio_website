@@ -107,6 +107,202 @@ export default function Home() {
     os: ["macOS", "Windows", "Linux"],
   }
 
+  // Certifications data
+  const certifications = [
+    {
+      title: "Analyze Data to Answer Questions",
+      provider: "Google",
+      date: "February 2025",
+      category: "Data Analytics",
+    },
+    {
+      title: "Data Analysis with R Programming",
+      provider: "Google",
+      date: "February 2025",
+      category: "Data Analytics",
+    },
+    {
+      title: "Process Data From Dirty to Clean",
+      provider: "Google",
+      date: "February 2025",
+      category: "Data Analytics",
+    },
+    {
+      title: "Share Data Through the Art of Visualization",
+      provider: "Google",
+      date: "February 2025",
+      category: "Data Analytics",
+    },
+    {
+      title: "Prepare Data for Exploration",
+      provider: "Google",
+      date: "November 2024",
+      category: "Data Analytics",
+    },
+    {
+      title: "C++ Templates and the STL",
+      provider: "LinkedIn",
+      date: "September 2023",
+      category: "Programming",
+    },
+    {
+      title: "Introduction to Data Structures and Algorithms in C++",
+      provider: "Pluralsight",
+      date: "September 2023",
+      category: "Programming",
+    },
+    {
+      title: "Learning C++",
+      provider: "LinkedIn",
+      date: "September 2023",
+      category: "Programming",
+    },
+    {
+      title: "Beautiful C++14: STL Algorithms",
+      provider: "Pluralsight",
+      date: "August 2023",
+      category: "Programming",
+    },
+    {
+      title: "Beautiful C++17: Updating Legacy Code",
+      provider: "Pluralsight",
+      date: "August 2023",
+      category: "Programming",
+    },
+    {
+      title: "Design Patterns in C++20: Creational",
+      provider: "Pluralsight",
+      date: "August 2023",
+      category: "Programming",
+    },
+    {
+      title: "Practical C++14 and C++17 Features",
+      provider: "Pluralsight",
+      date: "August 2023",
+      category: "Programming",
+    },
+    {
+      title: "The Essentials of COM",
+      provider: "Pluralsight",
+      date: "August 2023",
+      category: "Programming",
+    },
+    {
+      title: "Visual Studio 2022 Playbook",
+      provider: "Pluralsight",
+      date: "August 2023",
+      category: "Tools",
+    },
+    {
+      title: "C++ Fundamentals Including C++17",
+      provider: "Pluralsight",
+      date: "July 2023",
+      category: "Programming",
+    },
+    {
+      title: "Learn to Program with C++17",
+      provider: "Pluralsight",
+      date: "July 2023",
+      category: "Programming",
+    },
+    {
+      title: "Reading Legacy C++",
+      provider: "Pluralsight",
+      date: "July 2023",
+      category: "Programming",
+    },
+    {
+      title: "Ask Questions to Make Data-Driven Decisions",
+      provider: "Google",
+      date: "February 2022",
+      category: "Data Analytics",
+    },
+    {
+      title: "Foundations: Data, Data, Data Everywhere",
+      provider: "Google",
+      date: "January 2022",
+      category: "Data Analytics",
+    },
+    {
+      title: "Learn Linux From Scratch",
+      provider: "Udemy",
+      date: "November 2021",
+      category: "Operating Systems",
+    },
+    {
+      title: "Complete Introduction to C++ Programming",
+      provider: "Udemy",
+      date: "April 2021",
+      category: "Programming",
+    },
+    {
+      title: "Python in Data Science",
+      provider: "Udemy",
+      date: "March 2021",
+      category: "Data Science",
+    },
+    {
+      title: "Data Structures and Algorithms in Java",
+      provider: "Udemy",
+      date: "October 2020",
+      category: "Programming",
+    },
+    {
+      title: "Java Programming Certificate",
+      provider: "MyCaptain",
+      date: "July 2020",
+      category: "Programming",
+    },
+    {
+      title: "Ethical Hacking",
+      provider: "Azure Skynet Solutions Pvt. Ltd",
+      date: "June 2020",
+      category: "Cybersecurity",
+    },
+    {
+      title: "Introduction to Programming Using Python",
+      provider: "MyCaptain",
+      date: "June 2020",
+      category: "Programming",
+    },
+    {
+      title: "C Programming Certificate",
+      provider: "MyCaptain",
+      date: "January 2020",
+      category: "Programming",
+    },
+    {
+      title: "Data Analysis with Tableau",
+      provider: "Edureka",
+      date: "",
+      category: "Data Analytics",
+    },
+    {
+      title: "Data Analytics in Excel",
+      provider: "Simplilearn",
+      date: "",
+      category: "Data Analytics",
+    },
+    {
+      title: "R Programming for Statistical Computing",
+      provider: "freeCodeCamp",
+      date: "",
+      category: "Data Science",
+    },
+    {
+      title: "SAS for Data Analytics",
+      provider: "freeCodeCamp",
+      date: "",
+      category: "Data Analytics",
+    },
+    {
+      title: "Statistics and Probability",
+      provider: "freeCodeCamp",
+      date: "",
+      category: "Data Science",
+    },
+  ]
+
   return (
     <div className="min-h-screen bg-cream-100 text-brown-800 relative overflow-hidden">
       {/* Particle effect background */}
@@ -156,6 +352,13 @@ export default function Home() {
             onClick={() => setMobileMenuOpen(false)}
           >
             Projects
+          </Link>
+          <Link
+            href="#certifications"
+            className="hover:text-taupe-700 transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Certifications
           </Link>
           <Link
             href="#contact"
@@ -320,7 +523,24 @@ export default function Home() {
                   <TabsContent value="certifications" className="mt-4 text-brown-700">
                     <div className="space-y-3">
                       <div>
-                        <h4 className="font-medium">Google Data Analytics Certification</h4>
+                        <h4 className="font-medium">Recent Certifications</h4>
+                        <div className="space-y-2">
+                          <div className="text-sm">
+                            <span className="font-medium">Google Data Analytics Professional Certificate</span>
+                            <span className="text-brown-500"> - In Progress (2024-2025)</span>
+                          </div>
+                          <div className="text-sm">
+                            <span className="font-medium">Advanced C++ Programming</span>
+                            <span className="text-brown-500"> - Pluralsight & LinkedIn (2023)</span>
+                          </div>
+                          <div className="text-sm">
+                            <span className="font-medium">Data Science & Analytics</span>
+                            <span className="text-brown-500"> - Multiple Platforms (2020-2022)</span>
+                          </div>
+                        </div>
+                        <p className="text-xs text-brown-500 mt-2">
+                          View complete list in the Certifications section below
+                        </p>
                       </div>
                     </div>
                   </TabsContent>
@@ -340,30 +560,44 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-brown-800">Associate Software Developer</h3>
                   <p className="text-brown-600">Siemens Digital Industries Software, Pune, India</p>
                 </div>
-                <p className="text-brown-500 mt-1 md:mt-0">July 2022 – Aug 2024</p>
+                <p className="text-brown-500 mt-1 md:mt-0">Dec 2023 – Aug 2024</p>
               </div>
               <ul className="text-brown-600 list-disc pl-5 space-y-1">
+                <li>Enhanced Solid Edge Draft and part environments with new features and improvements.</li>
+                <li>Resolved customer-reported bugs and issues reported through QA testing.</li>
+                <li>Developed and implemented automated testing procedures for new features and bug fixes.</li>
+                <li>Volunteered for the Family Day event in 2024, focusing on organization and management.</li>
+              </ul>
+              <div className="mt-3">
+                <span className="text-sm text-brown-500 font-medium">Skills: </span>
+                <span className="text-sm text-brown-600">Computer-Aided Design (CAD), C++, COM</span>
+              </div>
+            </div>
+
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-brown-800">Graduate Training Engineer (GTE)</h3>
+                  <p className="text-brown-600">Siemens Digital Industries Software, Pune, India</p>
+                </div>
+                <p className="text-brown-500 mt-1 md:mt-0">Jul 2022 – Dec 2023</p>
+              </div>
+              <ul className="text-brown-600 list-disc pl-5 space-y-1">
+                <li>Collaborated with team TMinus 1 on reducing and solving customer PRs and QA tested defects.</li>
+                <li>Implemented the Feature Control Frame Auxiliary Frame Indicator Feature in the UI and Backend.</li>
+                <li>Added automated testing procedures for Solid Edge to avoid complications and regressions.</li>
+                <li>Researched and prototyped for upcoming features for Solid Edge.</li>
                 <li>
-                  Developed and optimized UI components within the Function Configuration Framework (FCF), resulting in
-                  a 20% increase in responsiveness.
-                </li>
-                <li>
-                  Led efforts in defect triage and resolution using data analysis and QA logs, contributing to a 15%
-                  reduction in recurring issues.
-                </li>
-                <li>
-                  Refactored core components in C++ using Component Object Model (COM), improving application
-                  maintainability and reducing load times by 10%.
-                </li>
-                <li>
-                  Created automated test cases integrated into internal QA pipelines, reducing manual testing cycles by
-                  25% and accelerating product release timelines.
-                </li>
-                <li>
-                  Utilized Polarion dashboards for agile sprint planning, workload tracking, and defect management,
-                  improving transparency and stakeholder alignment.
+                  Studied and worked in Agile methodologies using C++ programming language for implementing features and
+                  fixing issues.
                 </li>
               </ul>
+              <div className="mt-3">
+                <span className="text-sm text-brown-500 font-medium">Skills: </span>
+                <span className="text-sm text-brown-600">
+                  COM, Agile Methodologies, Object-Oriented Programming (OOP)
+                </span>
+              </div>
             </div>
 
             <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
@@ -372,25 +606,89 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-brown-800">Data Science Intern</h3>
                   <p className="text-brown-600">Technocolabs Software (Remote)</p>
                 </div>
-                <p className="text-brown-500 mt-1 md:mt-0">June 2021 – July 2021</p>
+                <p className="text-brown-500 mt-1 md:mt-0">Jun 2021 – Jul 2021</p>
               </div>
               <ul className="text-brown-600 list-disc pl-5 space-y-1">
+                <li>Worked with a team of 8 interns on "Stock market prediction using sentiment analysis" project.</li>
                 <li>
-                  Developed a sentiment analysis model using NLP techniques to predict stock trends with 85% accuracy.
+                  Performed cleaning and exploratory analysis of news datasets, conducting sentiment analysis on
+                  financial data.
                 </li>
                 <li>
-                  Implemented a fully automated ETL pipeline for ingesting, cleaning, and processing financial news data
-                  from multiple APIs.
+                  Created a deep learning model to predict stock prices based on news article headlines and
+                  opening/closing prices.
                 </li>
-                <li>
-                  Built and deployed a Flask-based web application on Heroku featuring real-time dashboards for model
-                  outputs and sentiment visualization.
-                </li>
-                <li>
-                  Designed UI interfaces and backend logic to support high-volume user activity post-launch, handling up
-                  to 300% traffic growth.
-                </li>
+                <li>Developed webpage using HTML, CSS and deployed using Flask and Heroku.</li>
               </ul>
+            </div>
+
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-brown-800">Web Development Intern</h3>
+                  <p className="text-brown-600">Paathshaala (Remote)</p>
+                </div>
+                <p className="text-brown-500 mt-1 md:mt-0">Jan 2021 – Feb 2021</p>
+              </div>
+              <ul className="text-brown-600 list-disc pl-5 space-y-1">
+                <li>Actively participated in the development and enhancement of the Paathshala website.</li>
+                <li>Leveraged WordPress to design and build engaging and user-friendly web pages.</li>
+                <li>Collaborated with the web development team to implement responsive design principles.</li>
+                <li>Gained hands-on experience in customizing WordPress themes, plugins, and widgets.</li>
+              </ul>
+            </div>
+
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-brown-800">Student Intern</h3>
+                  <p className="text-brown-600">MasterJi</p>
+                </div>
+                <p className="text-brown-500 mt-1 md:mt-0">Oct 2020 – Dec 2020</p>
+              </div>
+              <ul className="text-brown-600 list-disc pl-5 space-y-1">
+                <li>Worked as a technical-cum-non technical intern with manager on data creation and management.</li>
+                <li>Managed data on Google Cloud Firebase interface for client applications.</li>
+                <li>Developed Android applications using Android Studio for vendor use.</li>
+                <li>Performed non-technical work including blog writing, PR creation, and data entry.</li>
+              </ul>
+            </div>
+
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-brown-800">Leadership Roles</h3>
+                  <p className="text-brown-600">Youth India Foundation</p>
+                </div>
+                <p className="text-brown-500 mt-1 md:mt-0">Jul 2020 – Mar 2021</p>
+              </div>
+              <div className="space-y-3">
+                <div>
+                  <h4 className="font-medium text-brown-700">
+                    Assistant National Event Planning Team (Jan 2021 – Mar 2021)
+                  </h4>
+                  <ul className="text-brown-600 list-disc pl-5 text-sm">
+                    <li>Coordinated planning and execution of events on a national level.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-medium text-brown-700">
+                    Vice President Maharashtra Outreach (Dec 2020 – Jan 2021)
+                  </h4>
+                  <ul className="text-brown-600 list-disc pl-5 text-sm">
+                    <li>Approached colleges in Maharashtra to promote foundation goals and gain new participants.</li>
+                    <li>Managed selection, onboarding, and team allocation of new joiners.</li>
+                    <li>Conducted events related to art and craft, LGBTQ awareness, and book donation.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-medium text-brown-700">Management Team Head (Oct 2020 – Dec 2020)</h4>
+                  <ul className="text-brown-600 list-disc pl-5 text-sm">
+                    <li>Coordinated with team members for smooth planning and execution of events.</li>
+                    <li>Assisted in searching for sponsors and participants for events.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -482,6 +780,74 @@ export default function Home() {
                 </DialogContent>
               </Dialog>
             ))}
+          </div>
+        </section>
+
+        {/* Certifications Section */}
+        <section id="certifications" className="px-6 py-20 max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-10 text-center text-brown-800">Certifications</h2>
+          <div className="space-y-8">
+            {/* Data Analytics Certifications */}
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <h3 className="text-xl font-bold mb-4 text-brown-800 flex items-center gap-2">
+                <Database className="h-5 w-5 text-taupe-600" />
+                Data Analytics & Data Science
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                {certifications
+                  .filter((cert) => cert.category === "Data Analytics" || cert.category === "Data Science")
+                  .map((cert, index) => (
+                    <div key={index} className="border-l-4 border-taupe-400 pl-4">
+                      <h4 className="font-medium text-brown-700">{cert.title}</h4>
+                      <p className="text-sm text-brown-600">{cert.provider}</p>
+                      {cert.date && <p className="text-xs text-brown-500">{cert.date}</p>}
+                    </div>
+                  ))}
+              </div>
+            </div>
+
+            {/* Programming Certifications */}
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <h3 className="text-xl font-bold mb-4 text-brown-800 flex items-center gap-2">
+                <Code className="h-5 w-5 text-taupe-600" />
+                Programming & Software Development
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                {certifications
+                  .filter((cert) => cert.category === "Programming")
+                  .map((cert, index) => (
+                    <div key={index} className="border-l-4 border-sand-400 pl-4">
+                      <h4 className="font-medium text-brown-700">{cert.title}</h4>
+                      <p className="text-sm text-brown-600">{cert.provider}</p>
+                      {cert.date && <p className="text-xs text-brown-500">{cert.date}</p>}
+                    </div>
+                  ))}
+              </div>
+            </div>
+
+            {/* Other Certifications */}
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <h3 className="text-xl font-bold mb-4 text-brown-800 flex items-center gap-2">
+                <Award className="h-5 w-5 text-taupe-600" />
+                Specialized Skills & Tools
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                {certifications
+                  .filter(
+                    (cert) =>
+                      cert.category !== "Programming" &&
+                      cert.category !== "Data Analytics" &&
+                      cert.category !== "Data Science",
+                  )
+                  .map((cert, index) => (
+                    <div key={index} className="border-l-4 border-sage-400 pl-4">
+                      <h4 className="font-medium text-brown-700">{cert.title}</h4>
+                      <p className="text-sm text-brown-600">{cert.provider}</p>
+                      {cert.date && <p className="text-xs text-brown-500">{cert.date}</p>}
+                    </div>
+                  ))}
+              </div>
+            </div>
           </div>
         </section>
 
