@@ -26,7 +26,6 @@ import {
   ExternalLink,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 
@@ -40,7 +39,7 @@ export default function Home() {
       description:
         "End-to-end quantitative trading strategy for Tesla using Python with regression and ensemble models, achieving superior Sharpe ratio and lowest drawdown compared to benchmarks.",
       detailedDescription:
-        "A comprehensive quantitative trading strategy developed for Tesla (TSLA) stock as part of Data Science Engineering Methods & Tools course at Northeastern University. Key achievements include:\n\n• Built end-to-end quantitative trading strategy using Python with multiple regression models (OLS, LASSO, Ridge) and ensemble methods (Random Forest, Bagging, Gradient Boosting) to forecast daily returns from 2020–2024\n\n• Engineered over 50 sophisticated financial features including technical indicators (RSI, ATR, OBV), macroeconomic factors (FRED, ADS, yield curves), candlestick pattern labels, and sentiment scores using NewsAPI and TextBlob\n\n• Applied Principal Component Analysis (PCA) and statistical feature selection (p-value ≤ 0.05) to reduce multicollinearity and optimize model interpretability\n\n• Implemented sophisticated trading execution simulation with confidence-weighted position sizing, ATR-based risk management, stop-loss logic, and VIX-adjusted leverage rules\n\n• Achieved superior performance metrics, outperforming baseline models and established benchmarks (Buy-and-Hold, Buffett strategy) with the highest Sharpe ratio and lowest maximum drawdown",
+        "A comprehensive quantitative trading strategy developed for Tesla (TSLA) stock as part of Data Science Engineering Methods & Tools course at Northeastern University. Key features include:\n\n- Built end-to-end trading strategy using Python with multiple regression models and ensemble methods\n- Engineered 50+ financial features including technical indicators, macroeconomic factors, and sentiment analysis\n- Applied PCA and statistical feature selection to optimize model interpretability\n- Implemented trading execution with position sizing, risk management, and volatility adaptation\n- Achieved superior Sharpe ratio and lowest maximum drawdown compared to benchmarks",
       technologies: ["Python", "Machine Learning", "Financial Modeling", "PCA", "NewsAPI", "TextBlob"],
       icon: <LineChart className="h-12 w-12 text-taupe-600" />,
       githubLink: "https://github.com/ghatoleaakruti/tesla_trading_strategy",
@@ -367,6 +366,13 @@ export default function Home() {
           >
             Contact
           </Link>
+          <Link
+            href="#volunteering"
+            className="hover:text-taupe-700 transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Volunteering
+          </Link>
         </nav>
       </header>
 
@@ -429,7 +435,8 @@ export default function Home() {
                 alt="Aakruti Ghatole"
                 width={400}
                 height={400}
-                className="object-cover"
+                className="object-cover object-top"
+                priority
               />
             </div>
             <div>
@@ -451,28 +458,12 @@ export default function Home() {
               </div>
 
               <div className="mt-10">
-                <Tabs defaultValue="skills">
-                  <TabsList className="bg-cream-200">
-                    <TabsTrigger
-                      value="skills"
-                      className="flex items-center gap-2 data-[state=active]:bg-sand-100 data-[state=active]:text-taupe-700"
-                    >
-                      <Code size={16} /> Skills
-                    </TabsTrigger>
-                    <TabsTrigger
-                      value="education"
-                      className="flex items-center gap-2 data-[state=active]:bg-sand-100 data-[state=active]:text-taupe-700"
-                    >
-                      <GraduationCap size={16} /> Education
-                    </TabsTrigger>
-                    <TabsTrigger
-                      value="certifications"
-                      className="flex items-center gap-2 data-[state=active]:bg-sand-100 data-[state=active]:text-taupe-700"
-                    >
-                      <Award size={16} /> Certifications
-                    </TabsTrigger>
-                  </TabsList>
-                  <TabsContent value="skills" className="mt-4 text-brown-700">
+                <div className="mt-10 space-y-8">
+                  {/* Skills Section */}
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-brown-800 flex items-center gap-2">
+                      <Code size={20} /> Skills
+                    </h3>
                     <div className="space-y-3">
                       <div>
                         <h4 className="font-medium">Languages & Programming</h4>
@@ -491,8 +482,13 @@ export default function Home() {
                         <p className="text-sm text-brown-600">{skills.blockchain.join(", ")}</p>
                       </div>
                     </div>
-                  </TabsContent>
-                  <TabsContent value="education" className="mt-4 text-brown-700">
+                  </div>
+
+                  {/* Education Section */}
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-brown-800 flex items-center gap-2">
+                      <GraduationCap size={20} /> Education
+                    </h3>
                     <div className="space-y-4">
                       <div>
                         <h4 className="font-medium">Northeastern University, Boston, MA</h4>
@@ -519,8 +515,13 @@ export default function Home() {
                         </ul>
                       </div>
                     </div>
-                  </TabsContent>
-                  <TabsContent value="certifications" className="mt-4 text-brown-700">
+                  </div>
+
+                  {/* Certifications Section */}
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-brown-800 flex items-center gap-2">
+                      <Award size={20} /> Recent Certifications
+                    </h3>
                     <div className="space-y-3">
                       <div>
                         <h4 className="font-medium">Recent Certifications</h4>
@@ -543,8 +544,8 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
-                  </TabsContent>
-                </Tabs>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -688,6 +689,93 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Volunteering Section */}
+        <section id="volunteering" className="px-6 py-20 max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-10 text-center text-brown-800">Volunteering & Leadership</h2>
+          <div className="space-y-8">
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-brown-800">Senator</h3>
+                  <p className="text-brown-600">Graduate Student Government, Northeastern University</p>
+                </div>
+                <p className="text-brown-500 mt-1 md:mt-0">Feb 2025 – Present</p>
+              </div>
+              <ul className="text-brown-600 list-disc pl-5 space-y-1">
+                <li>Representing graduate students' interests and concerns in university governance.</li>
+                <li>
+                  Participating in policy discussions and decision-making processes affecting graduate student life.
+                </li>
+                <li>
+                  Advocating for improved resources, services, and support systems for the graduate student community.
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-brown-800">
+                    Siemens Mainstream Engineering Family Day Event 2024
+                  </h3>
+                  <p className="text-brown-600">Siemens Digital Industries Software</p>
+                </div>
+                <p className="text-brown-500 mt-1 md:mt-0">Dec 2023 – Mar 2024</p>
+              </div>
+              <ul className="text-brown-600 list-disc pl-5 space-y-1">
+                <li>Worked with the team to plan the Family Day event for the department.</li>
+                <li>Took charge of organizing and overseeing the planning and execution of various activities.</li>
+                <li>
+                  Managed arrangements for refreshments and coordinated the distribution of presents or gifts during the
+                  event.
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-brown-800">Siemens Mainstream Engineering Family Day</h3>
+                  <p className="text-brown-600">Siemens Digital Industries Software</p>
+                </div>
+                <p className="text-brown-500 mt-1 md:mt-0">Dec 2022 – Feb 2023</p>
+              </div>
+              <ul className="text-brown-600 list-disc pl-5 space-y-1">
+                <li>Worked with the team to plan the Family Day event for the department.</li>
+                <li>Took charge of organizing and overseeing the planning and execution of various activities.</li>
+                <li>
+                  Managed arrangements for refreshments and coordinated the distribution of presents or gifts during the
+                  event.
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-brown-800">Cyclothon Event</h3>
+                  <p className="text-brown-600">MKSSS Cummins College of Engineering for Women</p>
+                </div>
+                <p className="text-brown-500 mt-1 md:mt-0">Mar 2022 – Apr 2022</p>
+              </div>
+              <ul className="text-brown-600 list-disc pl-5 space-y-1">
+                <li>
+                  Took the lead in organizing and executing the cyclothon event as part of the technical fest at Cummins
+                  College of Engineering for Women.
+                </li>
+                <li>
+                  Oversaw the management of volunteers and participants, ensuring their involvement and coordination
+                  before and during the event.
+                </li>
+                <li>
+                  Managed the procurement of necessary materials for the event, liaising with vendors and college
+                  committees to acquire the required supplies.
+                </li>
+              </ul>
             </div>
           </div>
         </section>
