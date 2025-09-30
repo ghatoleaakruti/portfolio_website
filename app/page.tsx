@@ -97,13 +97,13 @@ export default function Home() {
 
   // Skills data
   const skills = {
-    languages: ["Python", "Java", "C++", "SQL", "Rust", "Solidity"],
-    frameworks: ["Flask", "Spring Boot", "Git", "Jira", "Heroku", "Android Studio", "NetBeans"],
+    aiml: ["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Reinforcement Learning", "AI Agents"],
+    languages: ["Python", "Java", "C++", "SQL", "Rust", "Solidity", "JavaScript"],
+    frameworks: ["TensorFlow", "PyTorch", "Scikit-learn", "Flask", "Spring Boot", "Git", "Docker"],
+    cloud: ["Google Cloud Platform", "AWS", "Azure", "Heroku", "MLOps", "CI/CD"],
     databases: ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "BigQuery"],
-    methodologies: ["Agile", "Scrum", "Object-Oriented Programming", "CI/CD"],
-    dataAnalysis: ["Pandas", "NumPy", "Scikit-learn", "XGBoost", "Tableau", "Seaborn", "Matplotlib"],
-    blockchain: ["Smart Contracts", "DAO Integration", "On-chain Data Feeds", "DeFi Architecture"],
-    os: ["macOS", "Windows", "Linux"],
+    dataAnalysis: ["Pandas", "NumPy", "XGBoost", "Tableau", "Power BI", "Seaborn", "Matplotlib"],
+    blockchain: ["Smart Contracts", "DAO Integration", "DeFi Architecture", "Web3"],
   }
 
   // Certifications data
@@ -390,10 +390,10 @@ export default function Home() {
             Software Developer | Data Analyst | AI/ML Researcher
           </p>
           <p className="text-md md:text-lg max-w-2xl mb-10 text-brown-600">
-            Aspiring full-stack developer and AI researcher with experience in software development, quantitative
-            finance, and AI-powered engineering solutions. Currently developing AI copilot solutions for CAD workflows
-            and synthetic data generation. Proven expertise in creating data-driven applications, building end-to-end
-            automation pipelines, and deploying solutions in real-world scenarios.
+            Software developer and AI researcher specializing in intelligent agents, machine learning systems, and
+            automation. Currently developing AI-powered copilot solutions and synthetic data generation pipelines for
+            manufacturing workflows. Passionate about building scalable data-driven applications and deploying
+            innovative AI solutions in real-world scenarios.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button className="rounded-full bg-taupe-500 hover:bg-taupe-600 text-white">2+ Years Experience</Button>
@@ -447,18 +447,20 @@ export default function Home() {
               <h2 className="text-4xl font-bold mb-6 text-brown-800">About Me</h2>
               <div className="space-y-4 text-brown-600">
                 <p>
-                  I am a software developer and AI researcher with a strong background in building scalable systems
-                  across diverse domains including CAD automation, healthcare, finance, and AI-driven engineering.
+                  I am a software developer and AI researcher with a strong focus on building intelligent systems and
+                  autonomous agents. My work spans machine learning, automation workflows, and scalable AI-driven
+                  solutions across healthcare, finance, and engineering domains.
                 </p>
                 <p>
                   I hold a Bachelor's degree in Mechanical Engineering and am currently pursuing my MS in Information
-                  Systems at Northeastern University. My technical interests lie at the intersection of full-stack
-                  development, AI/ML research, CAD workflows, and quantitative analytics. I'm passionate about
-                  leveraging AI to bridge the gap between design and manufacturing processes.
+                  Systems at Northeastern University. My research interests lie at the intersection of AI agents,
+                  machine learning pipelines, synthetic data generation, and cloud-based intelligent systems. I'm
+                  passionate about developing AI copilots that enhance human productivity and automate complex
+                  engineering workflows.
                 </p>
                 <p>
-                  I enjoy working in cross-functional teams, applying structured problem-solving, and contributing to
-                  innovation in user-focused systems.
+                  I thrive in collaborative environments, applying computational thinking and structured problem-solving
+                  to create innovative solutions that bridge the gap between research and practical applications.
                 </p>
               </div>
 
@@ -471,19 +473,31 @@ export default function Home() {
                     </h3>
                     <div className="space-y-3">
                       <div>
-                        <h4 className="font-medium">Languages & Programming</h4>
+                        <h4 className="font-medium">AI/ML & Research</h4>
+                        <p className="text-sm text-brown-600">{skills.aiml.join(", ")}</p>
+                      </div>
+                      <div>
+                        <h4 className="font-medium">Programming Languages</h4>
                         <p className="text-sm text-brown-600">{skills.languages.join(", ")}</p>
                       </div>
                       <div>
-                        <h4 className="font-medium">Frameworks & Tools</h4>
+                        <h4 className="font-medium">Frameworks & Libraries</h4>
                         <p className="text-sm text-brown-600">{skills.frameworks.join(", ")}</p>
                       </div>
                       <div>
-                        <h4 className="font-medium">Databases & Cloud</h4>
+                        <h4 className="font-medium">Cloud & DevOps</h4>
+                        <p className="text-sm text-brown-600">{skills.cloud.join(", ")}</p>
+                      </div>
+                      <div>
+                        <h4 className="font-medium">Data Science & Analytics</h4>
+                        <p className="text-sm text-brown-600">{skills.dataAnalysis.join(", ")}</p>
+                      </div>
+                      <div>
+                        <h4 className="font-medium">Databases</h4>
                         <p className="text-sm text-brown-600">{skills.databases.join(", ")}</p>
                       </div>
                       <div>
-                        <h4 className="font-medium">Web3/Blockchain</h4>
+                        <h4 className="font-medium">Blockchain & Web3</h4>
                         <p className="text-sm text-brown-600">{skills.blockchain.join(", ")}</p>
                       </div>
                     </div>
@@ -563,30 +577,33 @@ export default function Home() {
             <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                 <div>
-                  <h3 className="text-xl font-bold text-brown-800">Research and Development Intern</h3>
+                  <h3 className="text-xl font-bold text-brown-800">AI Research and Development Intern</h3>
                   <p className="text-brown-600">Foundation EGI, Boston, MA (Hybrid)</p>
                 </div>
                 <p className="text-brown-500 mt-1 md:mt-0">Jul 2025 – Present</p>
               </div>
               <ul className="text-brown-600 list-disc pl-5 space-y-1">
                 <li>
-                  Contributing to the research and development of AI-powered Copilot solutions for CAD and
-                  manufacturing.
+                  Developing AI-powered copilot solutions that bridge design and manufacturing workflows through
+                  intelligent automation.
                 </li>
                 <li>
-                  Developing and testing automation workflows in Siemens NX and generating synthetic CAD data for model
-                  training.
+                  Building synthetic data generation pipelines for training machine learning models on engineering
+                  workflows.
                 </li>
-                <li>Supporting cloud-based AI pipelines and data workflows using tools like Google Cloud and Git.</li>
                 <li>
-                  Conducting research on PMI standards and CAD data interoperability to enhance AI-driven engineering
-                  processes.
+                  Implementing cloud-based AI pipelines and data workflows using Google Cloud Platform and modern MLOps
+                  practices.
+                </li>
+                <li>
+                  Conducting research on data interoperability standards and semantic understanding for AI-driven
+                  engineering processes.
                 </li>
               </ul>
               <div className="mt-3">
                 <span className="text-sm text-brown-500 font-medium">Skills: </span>
                 <span className="text-sm text-brown-600">
-                  AI/ML, CAD Automation, Siemens NX, Google Cloud, Synthetic Data Generation, PMI Standards
+                  AI/ML, Intelligent Agents, Google Cloud, Synthetic Data Generation, Automation, Python
                 </span>
               </div>
             </div>
@@ -600,14 +617,14 @@ export default function Home() {
                 <p className="text-brown-500 mt-1 md:mt-0">Dec 2023 – Aug 2024</p>
               </div>
               <ul className="text-brown-600 list-disc pl-5 space-y-1">
-                <li>Enhanced Solid Edge Draft and part environments with new features and improvements.</li>
+                <li>Enhanced engineering software environments with new features and improvements.</li>
                 <li>Resolved customer-reported bugs and issues reported through QA testing.</li>
                 <li>Developed and implemented automated testing procedures for new features and bug fixes.</li>
                 <li>Volunteered for the Family Day event in 2024, focusing on organization and management.</li>
               </ul>
               <div className="mt-3">
                 <span className="text-sm text-brown-500 font-medium">Skills: </span>
-                <span className="text-sm text-brown-600">Computer-Aided Design (CAD), C++, COM</span>
+                <span className="text-sm text-brown-600">C++, Software Development, Automation Testing</span>
               </div>
             </div>
 
@@ -621,9 +638,9 @@ export default function Home() {
               </div>
               <ul className="text-brown-600 list-disc pl-5 space-y-1">
                 <li>Collaborated with team TMinus 1 on reducing and solving customer PRs and QA tested defects.</li>
-                <li>Implemented the Feature Control Frame Auxiliary Frame Indicator Feature in the UI and Backend.</li>
-                <li>Added automated testing procedures for Solid Edge to avoid complications and regressions.</li>
-                <li>Researched and prototyped for upcoming features for Solid Edge.</li>
+                <li>Implemented new features in the UI and backend for engineering software.</li>
+                <li>Added automated testing procedures to avoid complications and regressions.</li>
+                <li>Researched and prototyped for upcoming features.</li>
                 <li>
                   Studied and worked in Agile methodologies using C++ programming language for implementing features and
                   fixing issues.
@@ -632,7 +649,7 @@ export default function Home() {
               <div className="mt-3">
                 <span className="text-sm text-brown-500 font-medium">Skills: </span>
                 <span className="text-sm text-brown-600">
-                  COM, Agile Methodologies, Object-Oriented Programming (OOP)
+                  Agile Methodologies, Object-Oriented Programming (OOP), C++
                 </span>
               </div>
             </div>
