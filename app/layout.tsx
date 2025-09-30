@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: "Software Developer | Data Analyst | Blockchain Enthusiast",
     type: "website",
   },
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

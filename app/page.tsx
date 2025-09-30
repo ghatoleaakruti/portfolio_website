@@ -387,18 +387,22 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mb-6 text-brown-600">
-            Software Developer | Data Analyst | Blockchain Enthusiast
+            Software Developer | Data Analyst | AI/ML Researcher
           </p>
           <p className="text-md md:text-lg max-w-2xl mb-10 text-brown-600">
-            Aspiring full-stack developer and data analyst with experience in software development, quantitative
-            finance, and blockchain integration. Proven expertise in creating data-driven applications, building
-            end-to-end automation pipelines, and deploying solutions in real-world scenarios.
+            Aspiring full-stack developer and AI researcher with experience in software development, quantitative
+            finance, and AI-powered engineering solutions. Currently developing AI copilot solutions for CAD workflows
+            and synthetic data generation. Proven expertise in creating data-driven applications, building end-to-end
+            automation pipelines, and deploying solutions in real-world scenarios.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button className="rounded-full bg-taupe-500 hover:bg-taupe-600 text-white">2+ Years Experience</Button>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="rounded-full border-sand-400 text-brown-700 hover:bg-sand-100">
+                <Button
+                  variant="outline"
+                  className="rounded-full border-sand-400 text-brown-700 hover:bg-sand-100 bg-transparent"
+                >
                   <Download className="mr-2 h-4 w-4" /> Download CV
                 </Button>
               </DropdownMenuTrigger>
@@ -443,13 +447,14 @@ export default function Home() {
               <h2 className="text-4xl font-bold mb-6 text-brown-800">About Me</h2>
               <div className="space-y-4 text-brown-600">
                 <p>
-                  I am a software developer and aspiring data engineer with a strong background in building scalable
-                  systems across diverse domains including healthcare, finance, and blockchain.
+                  I am a software developer and AI researcher with a strong background in building scalable systems
+                  across diverse domains including CAD automation, healthcare, finance, and AI-driven engineering.
                 </p>
                 <p>
                   I hold a Bachelor's degree in Mechanical Engineering and am currently pursuing my MS in Information
                   Systems at Northeastern University. My technical interests lie at the intersection of full-stack
-                  development, quantitative analytics, and emerging Web3 technologies.
+                  development, AI/ML research, CAD workflows, and quantitative analytics. I'm passionate about
+                  leveraging AI to bridge the gap between design and manufacturing processes.
                 </p>
                 <p>
                   I enjoy working in cross-functional teams, applying structured problem-solving, and contributing to
@@ -555,6 +560,37 @@ export default function Home() {
         <section className="px-6 py-20 max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-10 text-center text-brown-800">Professional Experience</h2>
           <div className="space-y-8">
+            <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-brown-800">Research and Development Intern</h3>
+                  <p className="text-brown-600">Foundation EGI, Boston, MA (Hybrid)</p>
+                </div>
+                <p className="text-brown-500 mt-1 md:mt-0">Jul 2025 – Present</p>
+              </div>
+              <ul className="text-brown-600 list-disc pl-5 space-y-1">
+                <li>
+                  Contributing to the research and development of AI-powered Copilot solutions for CAD and
+                  manufacturing.
+                </li>
+                <li>
+                  Developing and testing automation workflows in Siemens NX and generating synthetic CAD data for model
+                  training.
+                </li>
+                <li>Supporting cloud-based AI pipelines and data workflows using tools like Google Cloud and Git.</li>
+                <li>
+                  Conducting research on PMI standards and CAD data interoperability to enhance AI-driven engineering
+                  processes.
+                </li>
+              </ul>
+              <div className="mt-3">
+                <span className="text-sm text-brown-500 font-medium">Skills: </span>
+                <span className="text-sm text-brown-600">
+                  AI/ML, CAD Automation, Siemens NX, Google Cloud, Synthetic Data Generation, PMI Standards
+                </span>
+              </div>
+            </div>
+
             <div className="bg-cream-200/80 backdrop-blur-sm rounded-lg p-6 shadow-md">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                 <div>
@@ -982,7 +1018,7 @@ export default function Home() {
               </Button>
               <Button
                 variant="outline"
-                className="rounded-full border-sand-400 text-brown-700 hover:bg-sand-100"
+                className="rounded-full border-sand-400 text-brown-700 hover:bg-sand-100 bg-transparent"
                 onClick={() => window.open("https://linkedin.com/in/aakruti-ghatole", "_blank")}
               >
                 <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
